@@ -6,6 +6,7 @@ import { HeroHeader } from "@/components/hero8-header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { ScrollProgress } from "./magicui/scroll-progress";
+import Globe from "./globe";
 
 
 export default function HeroSection() {
@@ -14,6 +15,9 @@ export default function HeroSection() {
       <HeroHeader />
       <ScrollProgress className="top-[70px] " />
       <main className="overflow-x-hidden">
+      <div className="absolute right-0 top-0 h-full hidden md:block">
+    <Globe />
+  </div>
         <section>
           <div className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44">
             <div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
@@ -36,13 +40,14 @@ export default function HeroSection() {
                   </Button>
                 </div>
               </div>
-              <Image
+              {/* <Image
                 className="-z-10 order-first ml-auto h-56 w-full object-cover invert sm:h-96 lg:absolute lg:inset-0 lg:-right-20 lg:-top-96 lg:order-last lg:h-max lg:w-2/3 lg:object-contain dark:mix-blend-lighten dark:invert-0"
                 src="https://res.cloudinary.com/dg4jhba5c/image/upload/v1741605150/abstract-bg_wq4f8w.jpg"
                 alt="Abstract Object"
                 height="4000"
                 width="3000"
-              />
+              /> */}
+           
             </div>
           </div>
         </section>
