@@ -6,7 +6,7 @@ import { HeroHeader } from "@/components/hero8-header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { ScrollProgress } from "./magicui/scroll-progress";
-import { AuroraText } from "./magicui/aurora-text";
+
 
 export default function HeroSection() {
   return (
@@ -20,7 +20,7 @@ export default function HeroSection() {
               <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
               
                 <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">
-                The World's Largest Hackathon
+                The World&apos;s Largest Hackathon
                 </h1>
                 <p className="mt-8 max-w-2xl text-pretty text-lg font-tektur">
                   Join thousands of developers to build, innovate, and compete

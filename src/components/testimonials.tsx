@@ -50,7 +50,7 @@ export default function WallOfLoveSection() {
             {testimonialChunks.map((chunk, chunkIndex) => (
               <div key={chunkIndex} className="space-y-3">
                 {chunk.map(({ id }, index) => (
-                  <ClientTweetCard id={id} />
+                  <ClientTweetCard id={id} key={index}/>
                 ))}
               </div>
             ))}

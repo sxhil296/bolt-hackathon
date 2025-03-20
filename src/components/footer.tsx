@@ -1,33 +1,7 @@
-import { Logo } from "@/components/logo";
+
 import Image from "next/image";
 import Link from "next/link";
 
-// const links = [
-//     {
-//         title: 'Features',
-//         href: '#',
-//     },
-//     {
-//         title: 'Solution',
-//         href: '#',
-//     },
-//     {
-//         title: 'Customers',
-//         href: '#',
-//     },
-//     {
-//         title: 'Pricing',
-//         href: '#',
-//     },
-//     {
-//         title: 'Help',
-//         href: '#',
-//     },
-//     {
-//         title: 'About',
-//         href: '#',
-//     },
-// ]
 
 export default function FooterSection() {
   return (
@@ -37,13 +11,7 @@ export default function FooterSection() {
           <Image src="/logo.png" width={100} height={30} alt="bolt logo" />
         </Link>
 
-        {/* <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-                    {links.map((link, index) => (
-                        <Link key={index} href={link.href} className="text-muted-foreground hover:text-primary block duration-150">
-                            <span>{link.title}</span>
-                        </Link>
-                    ))}
-                </div> */}
+       
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
           <Link
             href="#"
