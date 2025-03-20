@@ -26,12 +26,12 @@ export default function HeroSection() {
                 <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">
                 The World&apos;s Largest Hackathon
                 </h1>
-                <p className="mt-8 max-w-2xl text-pretty text-lg font-tektur">
+                <p className="mt-4 max-w-2xl text-pretty text-lg font-tektur">
                   Join thousands of developers to build, innovate, and compete
                   for amazing prizes in this global coding event powered by
                   bolt.new.
                 </p>
-
+<p className="bg-yellow-200 p-2 text-black w-fit mt-4">DATE YET TO BE ANNOOUNCED !</p>
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="px-5 text-base">
                     <Link href="https://www.hackathon.dev" target="_blank">
