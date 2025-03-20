@@ -61,11 +61,11 @@ export default function TeamSection() {
           </div>
         </div>
         <div className="mt-12 md:mt-24">
-          <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-6 gap-y-6 md:gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {members.map((member, index) => (
               <div key={index} className="group overflow-hidden">
                 <img
-                  className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
+                  className="h-76 md:h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
                   src={member.avatar}
                   alt="team member"
                   width="826"

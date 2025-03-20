@@ -60,7 +60,7 @@ export default function HeroSection() {
                 <p className="text-end text-sm">Sponsored by the best</p>
               </div>
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
-                <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
+                <InfiniteSlider speedOnHover={20} speed={40} gap={110}>
                   <div className="flex">
                     <img
                       className="mx-auto h-5 w-fit dark:invert"
