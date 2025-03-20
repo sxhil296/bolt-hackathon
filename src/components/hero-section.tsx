@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+
 import { HeroHeader } from "@/components/hero8-header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
@@ -23,7 +23,7 @@ export default function HeroSection() {
             <div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
               <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
               
-                <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">
+                <h1 className="mt-12 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">
                 The World&apos;s Largest Hackathon
                 </h1>
                 <p className="mt-4 max-w-2xl text-pretty text-lg font-tektur">
@@ -31,8 +31,10 @@ export default function HeroSection() {
                   for amazing prizes in this global coding event powered by
                   bolt.new.
                 </p>
-<p className="bg-yellow-200 p-2 text-black w-fit mt-4">DATE YET TO BE ANNOOUNCED !</p>
-                <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
+<div className="w-full flex justify-center md:justify-start">
+<p className="bg-yellow-200 p-2 text-black w-fit mt-4 text-pretty">DATE YET TO BE ANNOOUNCED !</p>
+</div>
+                <div className="mt-8 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="px-5 text-base">
                     <Link href="https://www.hackathon.dev" target="_blank">
                       <span className="text-nowrap">Register</span>
