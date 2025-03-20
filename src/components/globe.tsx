@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
+// @ts-expect-error: can be null
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Color } from "three";
 
@@ -11,7 +12,8 @@ export default function Globe() {
   const [showHint, setShowHint] = useState(true);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const mountNode = mountRef.current;
+    if (!mountNode) return;
 
     // Create scene, camera, and renderer
     const scene = new THREE.Scene();
@@ -23,8 +25,10 @@ export default function Globe() {
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
-    mountRef.current.appendChild(renderer.domElement);
+    mountNode.appendChild(renderer.domElement);
+    if (mountRef.current) {
+      mountRef.current.appendChild(renderer.domElement);
+    }
 
     // Create a starfield
     const starsGeometry = new THREE.BufferGeometry();
@@ -238,7 +242,7 @@ export default function Globe() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      cancelAnimationFrame(animationId);
+      mountNode?.removeChild(renderer.domElement);
       mountRef.current?.removeChild(renderer.domElement);
       controls.dispose();
       clearTimeout(hintTimer);

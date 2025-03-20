@@ -54,7 +54,7 @@ export default function FAQ() {
           </div>
           <div className="mt-2 md:mt-4 font-tektur">
             <p>
-            Find answers to common questions about this hackathon and support. If you can't find what you're
+            Find answers to common questions about this hackathon and support. If you can&apos;t find what you&apos;re
             looking for, please contact our support team.
             </p>
           </div>
